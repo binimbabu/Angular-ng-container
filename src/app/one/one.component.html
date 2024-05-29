@@ -1,0 +1,6 @@
+<button (click)="getDetails()">Get Details</button>
+<ng-container *ngIf="details">
+    <div *ngFor="let user of users">
+        {{user.name}}
+    </div>
+</ng-container>
